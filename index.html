@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+     <title>Anyadir Filas Dinámicamente en HTML by jotaerre.net</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css" />
+     <script src="js/code.js"> </script>
+
+</head>
+
+<body>
+	<input id="producto" type="text" placeholder="Producto"/> <!--Placeholder es un atributo informativo-->
+	<input id="precio" type="number" placeholder="Precio"/>
+	<button onclick="agregar()">Agregar Producto</button>
+	<table>
+	<thead>
+		<tr>
+			<th>Producto</th>
+			<th>Precio</th>
+			<th>Acciones</th>
+		</tr>
+		<!--tr>th*3 Hacemos que tr tenga 3 hijos th-->
+	</thead>
+	<tbody id="contenedor"></tbody>
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td colspan="2">0.00</td>
+		</tr>
+	</tfoot>
+	</table>
+<script src="js/code.js"></script>
+</body>
+
+</html>
